@@ -116,6 +116,11 @@ p {
     overflow: hidden;
     height: 380px; 
     max-width: 400px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu-item img {
