@@ -6,7 +6,7 @@
     <title>Alessio's Pizzaria</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/scripts/index.js" defer></script>
+    <script src="assets/scripts/index.js" defer type="module"></script>
 </head>
 <body>
     <header>
@@ -29,31 +29,33 @@
         <div class="hero">
             <h1>Bem-vindo à Alessio's</h1>
             <p>Saborosas pizzas feitas especialmente para você!</p>
-            <a href="#menu" class="button">Ver Cardápio</a>
+            <a href="#menu" class="hero-button">Ver Cardápio</a>
         </div>
     </section>
     
     <section id="menu">
         <h2>Cardápio</h2>
-        <label for="categoria">Categorias:</label>
-        <select id="categoria">
-            <option value="select" selected disabled>Selecionar</option>
-            <option value="all">Mostrar Tudo</option>
-            <option value="tradicional">Tradicional</option>
-            <option value="especial">Especial</option>
-            <option value="vegetariana">Vegetariana</option>
-        </select>
+        <div class="selecionar">
+            <label for="categoria">Categorias:</label>
+            <select id="categoria">
+                <option value="select" selected disabled>Selecionar</option>
+                <option value="all">Mostrar Tudo</option>
+                <option value="tradicional">Tradicional</option>
+                <option value="especial">Especial</option>
+                <option value="vegetariana">Vegetariana</option>
+            </select>
+        </div>
         <div class="menu-grid">
 
             <div class="menu-item tradicional">
-                <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita">
+                <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita com manjericão fresco">
                 <h3>Pizza Margherita</h3>
                 <p>Molho de tomate, mussarela, manjericão fresco.</p>
             </div>
 
             <div class="menu-item tradicional">
                 <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Pepperoni">
-                <h3>Pizza Pepperoni</h3>
+                <h3>Pizza Pepperoni com queijo mussarela</h3>
                 <p>Molho de tomate, pepperoni, queijo mussarela.</p>
             </div>
 
@@ -71,7 +73,7 @@
 
             <div class="menu-item vegetariana">
                 <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Vegetariana">
-                <h3>Pizza Vegetariana</h3>
+                <h3>Pizza Vegetariana com cogumelos e pimentões</h3>
                 <p>Molho de tomate, pimentões, cogumelos, azeitonas, queijo mussarela.</p>
             </div>
 
@@ -95,13 +97,13 @@
 
             <div class="menu-item especial">
                 <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Tropical">
-                <h3>Pizza Tropical</h3>
+                <h3>Pizza Tropical com abacaxi</h3>
                 <p>Molho de tomate, presunto, abacaxi, queijo mussarela.</p>
             </div>
 
             <div class="menu-item">
                 <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita Especial">
-                <h3>Pizza Margherita Especial</h3>
+                <h3>Pizza Margherita Especial com mussarela de búfala</h3>
                 <p>Molho de tomate, mussarela de búfala, tomate fresco, manjericão, azeite de oliva.</p>
             </div>
 
@@ -120,7 +122,7 @@
     </section>
 
     <section id="about">
-        <h2>Sobre Nós</h2>
+        <h2 class="titulo-about">Sobre Nós</h2>
         <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas.
         </p>
     </section>
@@ -131,25 +133,36 @@
 
         <address>
             <div class="addr">
-                <p>
-                    <strong>Endereço:</strong>
-                    Avenida Onze de Outubro, nº 123<br>
-                    Centro, Cidade Qualquer/RJ CEP: 12345-678
-                </p>
+            <p class="info">
+                <span class="material-symbols-outlined">explore_nearby</span>
+                <strong>Endereço:</strong> Avenida Pizzaria<br>
+                Cidade Qualquer/PB CEP: 12345-678
+            </p>
             </div>
+
             <div class="addr">
-                <p><strong>Telefone:</strong> (11) 5555-5555</p>
-                <p>
-                    <strong>E-mail:</strong>
-                    <a href="mailto:contato@alessios.pizza">contato@alessios.pizza</a>
-                </p>
+            <p class="info">
+                <span class="material-symbols-outlined">call</span>
+                <strong>Telefone:</strong> (11) 5555-5555
+            </p>
+            <p class="info">
+                <span class="material-symbols-outlined">mail</span>
+                <strong>E-mail:</strong>
+                <a href="mailto:contato@alessios.pizza">contato@alessios.pizza</a>
+            </p>
             </div>
+
             <div class="addr">
-                <p><strong>Horário de Funcionamento:</strong></p>
-                <p>Segunda a Sábado: 11h00 às 23h00 - Domingo: 16h00 às 23h00</p>
+            <p class="info">
+                <span class="material-symbols-outlined">nest_clock_farsight_analog</span>
+                <strong>Horário de Funcionamento:</strong>
+            </p>
+            <p>Segunda a Sábado: 11h00 às 23h00</p>
+            <p>Domingo: 16h00 às 23h00</p>
             </div>
         </address>
-        <a href="#" class="button">Peça agora mesmo!</a>
+
+        <a href="#" class="order-button">Peça agora mesmo!</a>
     </section>
     
     <footer>
