@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessio's Pizzaria</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/index.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Cardápio</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#contact">Contato</a></li>
+        <nav class="navigation">
+            <div class="hamburger" id="hamburger" role="button" aria-label="Abrir menu de navegação">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="menu-link">Home</a></li>
+                <li><a href="#menu" class="menu-link">Cardápio</a></li>
+                <li><a href="#about" class="menu-link">Sobre Nós</a></li>
+                <li><a href="#contact" class="menu-link">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -30,62 +37,62 @@
         <h2>Cardápio</h2>
         <div class="menu-grid">
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita">
             <h3>Pizza Margherita</h3>
             <p>Molho de tomate, mussarela, manjericão fresco.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Pepperoni">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Pepperoni">
             <h3>Pizza Pepperoni</h3>
             <p>Molho de tomate, pepperoni, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Quatro Queijos">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Quatro Queijos">
             <h3>Pizza Quatro Queijos</h3>
             <p>Molho de tomate, mussarela, parmesão, gorgonzola, provolone.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Calabresa">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Calabresa">
             <h3>Pizza Calabresa</h3>
             <p>Molho de tomate, calabresa, cebola, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Vegetariana">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Vegetariana">
             <h3>Pizza Vegetariana</h3>
             <p>Molho de tomate, pimentões, cogumelos, azeitonas, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Frango com Catupiry">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Frango com Catupiry">
             <h3>Pizza Frango com Catupiry</h3>
             <p>Molho de tomate, frango desfiado, catupiry, milho, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Portuguesa">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Portuguesa">
             <h3>Pizza Portuguesa</h3>
             <p>Molho de tomate, presunto, ovos, cebola, azeitonas, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Supreme">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Supreme">
             <h3>Pizza Supreme</h3>
             <p>Molho de tomate, pepperoni, pimentões, cebola roxa, azeitonas, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Tropical">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Tropical">
             <h3>Pizza Tropical</h3>
             <p>Molho de tomate, presunto, abacaxi, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita Especial">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Margherita Especial">
             <h3>Pizza Margherita Especial</h3>
             <p>Molho de tomate, mussarela de búfala, tomate fresco, manjericão, azeite de oliva.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Carne de Sol">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Carne de Sol">
             <h3>Pizza Carne de Sol</h3>
             <p>Molho de tomate, carne de sol desfiada, cebola roxa, queijo mussarela.</p>
             </div>
             <div class="menu-item">
-            <img src="src/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Caprese">
+            <img src="assets/img/pexels-engin-akyurt-2260208.jpg" alt="Pizza Caprese">
             <h3>Pizza Caprese</h3>
             <p>Molho de tomate, tomate fresco, mussarela de búfala, manjericão, azeite de oliva.</p>
             </div>
