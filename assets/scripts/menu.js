@@ -1,4 +1,4 @@
-export default function menu() {
+export function menu() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const menuLinks = document.querySelectorAll('.menu-link');
